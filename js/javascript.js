@@ -1,15 +1,18 @@
 let 	showDropdown = false;
 const dropdown		 = document.getElementById('nav_dropdown');
 
-document.getElementById('menu_button').addEventListener('click', ()=>{
-	if(!showDropdown){
-		dropdown.style.display = 'block';
-		showDropdown 					 = true;
-	}else{
-		dropdown.style.display = 'none';
-		showDropdown 					 = false;
-	}
-});
+document.addEventListener("DOMContentLoaded", ()=>{
+	document.getElementById('menu_button').addEventListener('click', ()=>{
+		console.log('why')
+		if(!showDropdown){
+			dropdown.style.display = 'block';
+			showDropdown 					 = true;
+		}else{
+			dropdown.style.display = 'none';
+			showDropdown 					 = false;
+		}
+	});
+})
 
 window.addEventListener('resize', ()=>{
 	dropdown.style.display	= 'none'

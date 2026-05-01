@@ -160,12 +160,12 @@
 .nav-grid .banner .nav-dropdown li {
   margin: 10px 0;
 }
-.nav-grid .fas {
+.nav-grid #menu_button {
   margin-right: 2rem;
   cursor: pointer;
 }
 @media (min-width: 1000px) {
-  .nav-grid .fas {
+  .nav-grid #menu_button {
     display: none;
   }
 }
